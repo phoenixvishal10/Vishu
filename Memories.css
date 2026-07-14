@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#fff,#fff8fb,#ffe7f1);
+color:#444;
+}
+
+/* NAVIGATION */
+
+nav{
+width:90%;
+height:80px;
+margin:25px auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 45px;
+border-radius:50px;
+background:rgba(255,255,255,.45);
+backdrop-filter:blur(12px);
+box-shadow:0 10px 30px rgba(255,182,193,.25);
+}
+
+.logo{
+font-size:24px;
+font-family:'Playfair Display',serif;
+font-weight:700;
+color:#df5b94;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-weight:500;
+position:relative;
+}
+
+nav a:hover,
+.active{
+color:#df5b94;
+}
+
+nav a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#df5b94;
+transition:.3s;
+}
+
+nav a:hover::after,
+.active::after{
+width:100%;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+color:#df5b94;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#666;
+}
+
+/* MEMORY GRID */
+
+.memories{
+width:90%;
+max-width:1300px;
+margin:60px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.memory{
+background:#fff;
+padding:35px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 15px 35px rgba(255,182,193,.25);
+transition:.35s;
+border-top:5px solid #df5b94;
+}
+
+.memory:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 45px rgba(223,91,148,.35);
+}
+
+.emoji{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.memory h2{
+font-family:'Playfair Display',serif;
+margin-bottom:8px;
+}
+
+.memory span{
+display:block;
+color:#df5b94;
+font-size:14px;
+font-weight:600;
+margin-bottom:18px;
+}
+
+.memory p{
+line-height:1.8;
+color:#666;
+}
+
+footer{
+text-align:center;
+padding:60px;
+color:#df5b94;
+font-size:18px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+flex-direction:column;
+height:auto;
+padding:20px;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+}
