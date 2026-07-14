@@ -1,0 +1,928 @@
+/* ================================
+   GOOGLE FONTS & RESET
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top left,#ffd7e7 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#ffdce9 0%,transparent 30%),
+    linear-gradient(135deg,#fff,#fff8fb,#ffe8f2);
+
+    color:#444;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+/* ================================
+   FLOATING HEARTS
+================================ */
+
+.hearts{
+
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+
+}
+
+.hearts span{
+
+    position:absolute;
+
+    bottom:-100px;
+
+    color:#ff7fae;
+
+    font-size:25px;
+
+    animation:floatHeart linear infinite;
+
+    opacity:.18;
+
+}
+
+.hearts span:nth-child(1){
+
+left:5%;
+animation-duration:13s;
+font-size:20px;
+
+}
+
+.hearts span:nth-child(2){
+
+left:18%;
+animation-duration:16s;
+font-size:30px;
+
+}
+
+.hearts span:nth-child(3){
+
+left:32%;
+animation-duration:11s;
+font-size:22px;
+
+}
+
+.hearts span:nth-child(4){
+
+left:47%;
+animation-duration:15s;
+font-size:40px;
+
+}
+
+.hearts span:nth-child(5){
+
+left:63%;
+animation-duration:12s;
+font-size:28px;
+
+}
+
+.hearts span:nth-child(6){
+
+left:75%;
+animation-duration:18s;
+font-size:20px;
+
+}
+
+.hearts span:nth-child(7){
+
+left:87%;
+animation-duration:14s;
+font-size:34px;
+
+}
+
+.hearts span:nth-child(8){
+
+left:95%;
+animation-duration:17s;
+font-size:24px;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+}
+
+}
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav{
+
+width:90%;
+
+margin:25px auto;
+
+height:82px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 40px;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(18px);
+
+border-radius:50px;
+
+box-shadow:0 15px 35px rgba(255,170,195,.25);
+
+}
+
+.logo{
+
+font-family:'Playfair Display',serif;
+
+font-size:26px;
+
+font-weight:700;
+
+color:#df5b94;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#555;
+
+font-weight:500;
+
+position:relative;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#df5b94;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#df5b94;
+
+transition:.3s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+.active{
+
+color:#df5b94;
+
+}
+
+.active::after{
+
+width:100%;
+
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero{
+
+text-align:center;
+
+padding:60px 20px;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:72px;
+
+color:#df5b94;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/* ================================
+   COUPLE SECTION
+================================ */
+
+.couple{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:80px;
+
+margin-top:40px;
+
+}
+
+.person{
+
+text-align:center;
+
+}
+
+.image{
+
+width:240px;
+
+height:240px;
+
+border-radius:50%;
+
+padding:8px;
+
+background:linear-gradient(135deg,#ff8eb5,#ffc8dc);
+
+box-shadow:0 20px 45px rgba(255,170,195,.35);
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+.image img{
+
+width:100%;
+
+height:100%;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+}
+
+.person h2{
+
+margin-top:20px;
+
+font-size:28px;
+
+font-family:'Playfair Display',serif;
+
+}
+
+.heart-center{
+
+font-size:80px;
+
+color:#ff5f9a;
+
+animation:pulse 1.6s infinite;
+
+}
+
+/* ================================
+   LOVE METER
+================================ */
+
+.meter-card{
+
+width:850px;
+
+max-width:90%;
+
+margin:80px auto;
+
+padding:45px;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(15px);
+
+border-radius:30px;
+
+box-shadow:0 20px 45px rgba(255,170,195,.25);
+
+text-align:center;
+
+}
+
+.meter-card h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:42px;
+
+color:#df5b94;
+
+margin-bottom:35px;
+
+}
+
+.meter{
+
+height:30px;
+
+background:#ffd6e5;
+
+border-radius:50px;
+
+overflow:hidden;
+
+}
+
+.fill{
+
+width:0%;
+
+height:100%;
+
+background:linear-gradient(90deg,#ff6fa3,#ffb8d1);
+
+border-radius:50px;
+
+transition:2.5s ease;
+
+}
+
+.percent{
+
+font-size:70px;
+
+font-weight:700;
+
+margin-top:30px;
+
+color:#df5b94;
+
+}
+
+.loading{
+
+margin-top:20px;
+
+font-size:18px;
+
+color:#666;
+
+animation:blink 1.5s infinite;
+
+}
+/* ================================
+   RESULT CARD
+================================ */
+
+.result{
+
+    width:900px;
+    max-width:90%;
+
+    margin:70px auto;
+
+    padding:55px;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:35px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(255,170,195,.35);
+
+    animation:fadeUp .8s ease;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.result h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:32px;
+
+    color:#df5b94;
+
+    margin-bottom:20px;
+
+}
+
+.result h1{
+
+    font-size:64px;
+
+    color:#ff4f8d;
+
+    margin:20px 0;
+
+    font-family:'Playfair Display',serif;
+
+    animation:glow 2s infinite alternate;
+
+}
+
+#fortune{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.crown{
+
+    font-size:80px;
+
+    margin:30px 0;
+
+    animation:bounce 2s infinite;
+
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+#again{
+
+    margin-top:40px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    background:linear-gradient(135deg,#ff6ea5,#ff99bf);
+
+    color:white;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(255,105,160,.35);
+
+}
+
+#again:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(255,105,160,.45);
+
+}
+
+/* ================================
+   QUOTE CARD
+================================ */
+
+.quote{
+
+    width:900px;
+
+    max-width:90%;
+
+    margin:70px auto;
+
+    padding:45px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 45px rgba(255,182,193,.25);
+
+}
+
+.quote h2{
+
+    color:#df5b94;
+
+    font-family:'Playfair Display',serif;
+
+    margin-bottom:25px;
+
+    font-size:36px;
+
+}
+
+blockquote{
+
+    font-size:24px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    font-style:italic;
+
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    color:#df5b94;
+
+    font-size:18px;
+
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes glow{
+
+0%{
+
+text-shadow:0 0 10px #ff9fc3;
+
+}
+
+100%{
+
+text-shadow:
+
+0 0 15px #ff8eb7,
+
+0 0 35px #ff73a8,
+
+0 0 55px #ff5f9c;
+
+}
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:.35;
+
+}
+
+}
+
+@keyframes bounce{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:1000px){
+
+nav{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.couple{
+
+flex-direction:column;
+
+gap:35px;
+
+}
+
+.heart-center{
+
+font-size:55px;
+
+}
+
+.image{
+
+width:180px;
+
+height:180px;
+
+}
+
+.meter-card{
+
+padding:30px;
+
+}
+
+.meter-card h2{
+
+font-size:30px;
+
+}
+
+.percent{
+
+font-size:50px;
+
+}
+
+.result{
+
+padding:35px;
+
+}
+
+.result h1{
+
+font-size:46px;
+
+}
+
+.result h2{
+
+font-size:28px;
+
+}
+
+.quote{
+
+padding:35px;
+
+}
+
+.quote h2{
+
+font-size:30px;
+
+}
+
+blockquote{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.person h2{
+
+font-size:22px;
+
+}
+
+.image{
+
+width:150px;
+
+height:150px;
+
+}
+
+.percent{
+
+font-size:42px;
+
+}
+
+.result h1{
+
+font-size:36px;
+
+}
+
+blockquote{
+
+font-size:18px;
+
+}
+
+#again{
+
+width:100%;
+
+padding:16px;
+
+}
+
+}
