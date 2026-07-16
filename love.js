@@ -22,7 +22,7 @@ const fortunes = [
 
 "Today's love forecast: 100% romance and Jaanu wins! 🌸",
 
-"According to the Heart Council... Jaanu loves just a tiny bit more today! 💘"
+"According to the Heart Council... Jaanu loves just a tiny bit more today!  💘"
 
 ];
 // ================================
