@@ -4,68 +4,27 @@
 
 const fortunes = [
 
-"Cupid checked today's stars... Vishu wins today by one extra hug! ❤️",
+"Cupid checked today's stars... Jaanu wins today by one extra hug! ❤️",
 
-"The universe smiled today. Vishu's heart is overflowing with love! 💖",
+"The universe smiled today. Jaanu's heart is overflowing with love! 💖",
 
-"Today's prediction: Vishu is officially the Love Champion! 🏆",
+"Today's prediction: Jaanu is officially the Love Champion! 🏆",
 
-"The Love Meter almost exploded... Vishu wins today! ❤️",
+"The Love Meter almost exploded... Jaanu wins today! ❤️",
 
-"Breaking News! Cupid crowned Vishu today's romantic champion! 👑",
+"Breaking News! Cupid crowned Jaanu today's romantic champion! 👑",
 
-"Love can't really be measured... but today Vishu gets the crown! 💕",
+"Love can't really be measured... but today Jaanu gets the crown! 💕",
 
-"After counting millions of heartbeats... Vishu wins today! ❤️",
+"After counting millions of heartbeats... Jaanu wins today! ❤️",
 
-"The stars couldn't decide... but eventually picked Vishu! ✨",
+"The stars couldn't decide... but eventually picked Jaanu! ✨",
 
-"Today's love forecast: 100% romance and Vishu wins! 🌸",
+"Today's love forecast: 100% romance and Jaanu wins! 🌸",
 
-"According to the Heart Council... Vishu loves just a tiny bit more today! 💘",
-
-"Cupid rolled the dice... Vishu got lucky today! ❤️",
-
-"The butterflies voted... Vishu wins today's love contest! 🦋",
-
-"Today's hugs belong to Vishu! 🤗",
-
-"Every heartbeat pointed toward Vishu today. ❤️",
-
-"The moon whispered the answer... Vishu! 🌙",
-
-"The flowers bloomed for Vishu today. 🌹",
-
-"The sunshine says Vishu deserves today's trophy. ☀️",
-
-"The Love Fairy picked Vishu without hesitation. 🧚",
-
-"Today's cuddle champion is Vishu! 🥰",
-
-"Congratulations! Vishu collected the most smiles today. 😊",
-
-"The stars awarded Vishu an extra heart today. ⭐",
-
-"The love compass pointed toward Vishu. 🧭",
-
-"Cupid's arrows all landed on Vishu today! 🏹",
-
-"The clouds shaped themselves into Vishu's victory. ☁️",
-
-"Today's magical love prediction belongs to Vishu! ✨",
-
-"The heart meter reached maximum because of Vishu. ❤️",
-
-"The universe couldn't stop smiling at Vishu today. 🌸",
-
-"Today's lucky lover is Vishu! 🍀",
-
-"Every flower agreed—Vishu wins today! 🌺",
-
-"The final result is in... Vishu wins today's Love Fortune! ❤️"
+"According to the Heart Council... Jaanu loves just a tiny bit more today! 💘"
 
 ];
-
 // ================================
 
 const quotes = [
